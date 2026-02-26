@@ -28,6 +28,7 @@ public class teste_lista
             }
 
             System.out.println(listaNome);
+            teclado.close();
         }
         else
         {
