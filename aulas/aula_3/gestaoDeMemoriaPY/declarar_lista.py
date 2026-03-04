@@ -1,4 +1,4 @@
-from biblioteca import popular_lista_aleatoria, exibir_lista
+from aulas.aula_3.gestaoDeMemoriaPY.biblioteca import popular_lista_aleatoria, exibir_lista, copiar_lista_sem_replicados
 
 #declarando a lista em python
 lista_numeros = []
