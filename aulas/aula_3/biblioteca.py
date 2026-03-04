@@ -23,3 +23,14 @@ def exibir_lista(lista):
 
     print("+---------------+")
     print("Total de elementos: ", len(lista))
+
+def copiar_lista_sem_replicados(lista_origem, lista_destino):
+    """método que copia o conteúdo da lista origem para dentro da lista destino sem os replicados
+
+    Args:
+        lista_origem (int): lista original contendo todos os números
+        lista_destino (int): lista final contendo somente os números não replicados
+    """
+    for item in lista_origem:
+        if item not in lista_destino:
+            lista_destino.append(item)

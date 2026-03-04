@@ -13,5 +13,7 @@ fase_final = 50
 popular_lista_aleatoria(lista_numeros, quantidade_numeros, fase_inicial, fase_final)
 exibir_lista(lista_numeros)
 
-
-
+lista_resultado = []
+copiar_lista_sem_replicados(lista_numeros, lista_resultado)
+lista_resultado.sort()
+exibir_lista(lista_resultado)
