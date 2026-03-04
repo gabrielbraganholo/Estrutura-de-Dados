@@ -69,8 +69,25 @@ Estrutura de Dados
                     vetor = [5, 9, 7, 2, 5];
                     numero = 5;
                     if (vetor.contains(numero))
+                    {
                         System.out.print("Encontrado.");
+                    }
                     else
+                    {
                         System.out.print("Não encontrado.");
+                    }
+
+                - C#
+                    vetor = [5, 9, 7, 2, 5];
+                    numero = 5;
+                    if (vetor.Contains(numero))
+                    {
+                        Console.WriteLine("Encontrado.");
+                    }
+                    else
+                    {
+                        Console.WriteLine("Não encontrado.");
+                    }
+                    
                     
             
