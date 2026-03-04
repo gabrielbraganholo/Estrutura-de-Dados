@@ -11,7 +11,7 @@ int main()
 {
     vector<int> listaNumeros;
     int quantidadeNumeros = 0;
-    int faixaInicial = 10, faixaFinal = 50;
+    int faixaInicial = 10, faixaFinal = 15;
     vector<int> listaResultados;
 
     cout << "Digite quantos números quer gerar:\n -> ";
@@ -20,8 +20,8 @@ int main()
     popularListaAleatoria(listaNumeros, quantidadeNumeros, faixaInicial, faixaFinal);
     exibirLista(listaNumeros);
 
-    copiarListaSemReplicados(listaNumeros);
-    exibirLista(listaNumeros);
+    copiarListaSemReplicados(listaNumeros, listaResultados);
+    exibirLista(listaResultados);
 
     return 1;
 }

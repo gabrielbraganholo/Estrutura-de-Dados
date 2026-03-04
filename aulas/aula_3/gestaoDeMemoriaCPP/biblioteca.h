@@ -55,7 +55,7 @@ void copiarListaSemReplicados(vector<int> listaOrigem,vector<int> &listaDestino)
     for(int i = 0; i < listaOrigem.size(); i++)
     {
         numeroTemporario = listaOrigem[i];
-        for(int j = 0; i < listaDestino.size(); i++)
+        for(int j = 0; j < listaDestino.size(); j++)
         {
             if(listaOrigem[i] == listaDestino[j])
             {
@@ -67,5 +67,6 @@ void copiarListaSemReplicados(vector<int> listaOrigem,vector<int> &listaDestino)
         {
             listaDestino.push_back(numeroTemporario);
         }
+        flag = 0;
     }
 }
