@@ -28,10 +28,13 @@ def mediana_glicemia(lista):
     lista.sort(key=lambda g: g.valor)
 
     if(len(lista) % 2 == 0):
-        int i
+        i = len(lista)//2
+        mediana = (lista[i-1].valor+lista[i].valor)/2
     else:
-        indice = len(lista)+0.5
-        print("Mediana: ", valor[indice])
+        i = (len(lista)//2)
+        mediana = lista[i].valor
 
+        return mediana
 
 def ordenar_lista(lista):
+    pass

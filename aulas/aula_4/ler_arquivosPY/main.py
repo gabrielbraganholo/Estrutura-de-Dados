@@ -1,5 +1,5 @@
 from classes import Glicemia
-from funcoes import popular_lista, exibir_lista, media_glicemia
+from funcoes import popular_lista, exibir_lista, media_glicemia, mediana_glicemia
 
 
 lista = []
@@ -24,3 +24,6 @@ exibir_lista(lista)
 
 media = media_glicemia(lista)
 print("Mediana glicemica: ", media)
+
+mediana = mediana_glicemia(lista)
+print("Mediana: ", mediana)
