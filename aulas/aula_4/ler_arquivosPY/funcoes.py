@@ -35,6 +35,3 @@ def mediana_glicemia(lista):
         mediana = lista[i].valor
 
         return mediana
-
-def ordenar_lista(lista):
-    pass
