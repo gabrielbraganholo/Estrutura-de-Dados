@@ -7,7 +7,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Main {
-    static void main(String[] args) {
+    public static void main(String[] args) {
 //        ArrayList<Clima> lista = new ArrayList<>();
 //
 //        String linha = "2022,Fevereiro,Quente,muita";
@@ -28,7 +28,7 @@ public class Main {
 //            System.out.println(c);
 //        }
         List<Clima> lista = new ArrayList<>();
-        String nomeBase = "base.csv";
+        String nomeBase = "C:\\arquivos github\\Estrutura-de-Dados\\aulas\\aula_5\\ler_csvJAVA\\base.csv";
 
         // O try-with-resources já fecha o arquivo automaticamente (igual ao 'with' do Python)
         try (BufferedReader leitor = new BufferedReader(
@@ -49,6 +49,18 @@ public class Main {
             for (Clima item : lista) {
                 System.out.println(item);
             }
+
+            ArrayList<String> resultadoMeses = Clima.mesMaisQuente(lista);
+            System.out.println("Meses mais quentes: ");
+            System.out.println(resultadoMeses);
+
+            ArrayList<String> resultadoAnosQuentes = Clima.anoMaisQuente(lista);
+            System.out.println("Anos mais quentes: ");
+            System.out.println(resultadoAnosQuentes);
+
+            ArrayList<String> resultadoAnosChuvosos = Clima.anoMaisChoveu(lista);
+            System.out.println("Anos mais chuvosos: ");
+            System.out.println(resultadoAnosChuvosos);
 
         } catch (Exception e) {
             System.err.println("Ocorreu algum erro... " + e.getMessage());
