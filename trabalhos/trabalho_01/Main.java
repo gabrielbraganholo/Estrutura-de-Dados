@@ -1,4 +1,4 @@
-package ler_csvJAVA;
+package trabalho_01;
 
 import java.io.BufferedReader;
 import java.io.FileReader;
@@ -8,27 +8,8 @@ import java.util.List;
 
 public class Main {
     public static void main(String[] args) {
-//        ArrayList<Clima> lista = new ArrayList<>();
-//
-//        String linha = "2022,Fevereiro,Quente,muita";
-//        String dadosLinha[] = linha.split(",");
-//        Clima objClima = new Clima(dadosLinha[0], dadosLinha[1], dadosLinha[2], dadosLinha[3]);
-//
-//        linha = "2022,Fevereiro,Quente,muita";
-//        dadosLinha = linha.split(",");
-//        objClima = new Clima(dadosLinha[0], dadosLinha[1], dadosLinha[2], dadosLinha[3]);
-//
-//        if (!lista.contains(objClima))
-//        {
-//            lista.add(objClima);
-//        }
-//
-//        for(Clima c : lista)
-//        {
-//            System.out.println(c);
-//        }
         List<Clima> lista = new ArrayList<>();
-        String nomeBase = "C:\\arquivos github\\Estrutura-de-Dados\\aulas\\aula_5\\ler_csvJAVA\\base.csv";
+        String nomeBase = "C:\\arquivos github\\Estrutura-de-Dados\\trabalhos\\trabalho_01\\base.csv";
 
         // O try-with-resources já fecha o arquivo automaticamente (igual ao 'with' do Python)
         try (BufferedReader leitor = new BufferedReader(

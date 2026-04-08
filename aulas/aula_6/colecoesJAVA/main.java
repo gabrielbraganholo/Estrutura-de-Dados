@@ -44,7 +44,5 @@ public class main {
         //fila.sort(null); transformaria a fila em uma lista praticamente
         System.out.println(fila);
 
-
-
     }
 }
