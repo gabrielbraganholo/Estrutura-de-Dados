@@ -1,4 +1,4 @@
-package aula_7;
+package aula_7.ExemploCPF_JAVA;
 
 public class Aluno {
     String cpf;

@@ -1,0 +1,4 @@
+ _Todo objeto de classe quando passado como parametro/argumento é passada a sua referência (endereço)
+    - Objeto de classe
+    - Matriz/Vetor
+        - Quando usados em uma função que, por exemplo altera algo, altera diretamente na origem.
