@@ -1,0 +1,12 @@
+Árvore = Estrutura de dados abstrata
+-> guarda e busca bem
+
+Conceitos:
+
+    - raiz: nó ou nodo de uma sub(tree)
+    - folha: nó ou nodo sem filhos
+    - percurso:     (recursão)
+        RED = pré-fixado -> pesquisa                if(tree.contains(x))
+        ERD = in-fixado -> exibição                 for(Integer i : tree)
+        EDR = pós-fixação -> deleção de tree        tree.clear()
+
