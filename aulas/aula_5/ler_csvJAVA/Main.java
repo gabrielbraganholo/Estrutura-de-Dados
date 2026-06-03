@@ -27,18 +27,17 @@ public class Main {
 //        {
 //            System.out.println(c);
 //        }
-        List<Clima> lista = new ArrayList<>();
+        List<ler_csvJAVA.Clima> lista = new ArrayList<>();
         String nomeBase = "C:\\arquivos github\\Estrutura-de-Dados\\aulas\\aula_5\\ler_csvJAVA\\base.csv";
 
         // O try-with-resources já fecha o arquivo automaticamente (igual ao 'with' do Python)
-        try (BufferedReader leitor = new BufferedReader(
-                new FileReader(nomeBase, StandardCharsets.UTF_8))) {
+        try (BufferedReader leitor = new BufferedReader(new FileReader(nomeBase, StandardCharsets.UTF_8))) {
 
             String linha;
             while ((linha = leitor.readLine()) != null) {
                 String[] dadosLinha = linha.split(",");
 
-                Clima objClima = new Clima(dadosLinha[0],dadosLinha[1],dadosLinha[2], dadosLinha[3]);
+                ler_csvJAVA.Clima objClima = new ler_csvJAVA.Clima(dadosLinha[0],dadosLinha[1],dadosLinha[2], dadosLinha[3]);
 
                 // Requer que o metodo equals() esteja implementado na classe Clima
                 if (!lista.contains(objClima)) {
@@ -46,19 +45,19 @@ public class Main {
                 }
             }
 
-            for (Clima item : lista) {
+            for (ler_csvJAVA.Clima item : lista) {
                 System.out.println(item);
             }
 
-            ArrayList<String> resultadoMeses = Clima.mesMaisQuente(lista);
+            ArrayList<String> resultadoMeses = ler_csvJAVA.Clima.mesMaisQuente(lista);
             System.out.println("Meses mais quentes: ");
             System.out.println(resultadoMeses);
 
-            ArrayList<String> resultadoAnosQuentes = Clima.anoMaisQuente(lista);
+            ArrayList<String> resultadoAnosQuentes = ler_csvJAVA.Clima.anoMaisQuente(lista);
             System.out.println("Anos mais quentes: ");
             System.out.println(resultadoAnosQuentes);
 
-            ArrayList<String> resultadoAnosChuvosos = Clima.anoMaisChoveu(lista);
+            ArrayList<String> resultadoAnosChuvosos = ler_csvJAVA.Clima.anoMaisChoveu(lista);
             System.out.println("Anos mais chuvosos: ");
             System.out.println(resultadoAnosChuvosos);
 

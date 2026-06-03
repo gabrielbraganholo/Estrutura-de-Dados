@@ -1,0 +1,92 @@
+Estrutura de Dados:
+
+Lista -> Pilha -> Fila -> Árvore -> Grafo
+
+Físicas: variáveis -> ram
+
+Abstratas:
+
+    -> Algorítmos + Coleções
+
+    - Lineares:
+    Ordem - Lista   |   add         size
+    Lifo - Pilha    |   remove      empty
+    Fifo - Fila     |   contains    indexOf
+
+    - Não Lineares:
+        - Árvore:                               |   add         empty
+            - genéricas                         |   remove      *RECURSÃO 
+            - binárias:                         |   contains
+                - pesquisa / busca (ordenadas)  |   size
+
+        - Grafo -> Coleção com foco em roteamento = percurso = caminhamento (track/route)
+            - Representar:
+                - Mapas     |   rodoviário
+                            |   equipamento (informática, rede elétrica, ...)
+                            |   aeroviário
+                            |   ferroviário
+            
+            -Conceitos:
+                - nó / nodo / vértice
+                    V = {a, b, c, d, e}
+
+                - aresta / arco
+                    A = {ab, bc, cd, de, ea, eb}
+
+                - grau -> arestas que chegam e partem
+                    - total
+                    - incidência / chegada
+                    - partida
+
+                - simetria 
+                    - simétrico
+                    - assimétrico (DIGRAFO)
+                    # Quando esxiste um grafo simétrico para vefiricar em um for aninhando,
+                    # um elemento Xij tem que, necessáriamente, ser igual a o elemento Yji.
+                    # Caso contrário, é um grafo assimétrico/dígrafo.
+
+                - representação
+                    - disco
+                    - ram
+
+                    - matriz de adjacência
+                        - qtd linhas = qtd vértices
+                        - qtd colunas = qtd de vértices
+
+                        - arestas -> assimétrica
+                            |------> simétrica
+
+
+                    ab      bc (aresta)
+                a -----> b -----> c (vértice)
+                ^        ^        |
+                |        |        v
+                -------- e <----- d
+
+
+# Como criar um grafo em java
+class Grafo{
+    int matrizADJ[][];
+    int qtdVertices;
+
+    public Grafo(int qtdVertices){
+        this.qtdVertices = qtdVertices;
+        this.matrizADJ = new int [qtdVertices][qtdVertices];
+    }
+
+    void mostrarMatriz(){
+
+    }
+
+    void mostrarGrafo(){
+
+    }
+
+    void inserirAresta(int origem, int destino){
+
+    }
+
+    void inserirArestaSimetrica(int origem, int destino){
+
+    }
+}

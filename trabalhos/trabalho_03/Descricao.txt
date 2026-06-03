@@ -34,3 +34,11 @@ lista_repetidas_pessoais)
 Opção:
 
 Toda vez que o programa for iniciado, os arquivos csv pessoais devem ser populados em suas listas respectivas.
+
+
+
+
+## Dicas 
+
+1) reescrever o equals() para comparar figuras
+2) 4 arquivos minhas (tenho e desejadas), outro (tem e desejadas)
