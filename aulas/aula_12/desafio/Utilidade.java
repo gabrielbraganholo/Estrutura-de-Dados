@@ -6,6 +6,12 @@ import java.nio.charset.StandardCharsets;
 import java.util.ArrayList;
 
 public class Utilidade {
+
+    /**
+     * Função estatica extrai os vértices de um arquivo
+     * @param base base de dados a ser extraída
+     * @return retorna os vértices extraídos da base
+     */
     static ArrayList<String> extrairVertices(String base) {
         ArrayList<String> vertices = new ArrayList<>();
 
@@ -32,6 +38,11 @@ public class Utilidade {
         return vertices;
     }
 
+    /**
+     * Função estática que extrai as arestas de um arquivo
+     * @param base base de dados a ser extraída
+     * @return retorna um grafo com os devidos vertices e arestas
+     */
     static Grafo extrairArestas(String base) {
         ArrayList<String> vertices = new ArrayList<>();
         Grafo grafo = new Grafo(extrairVertices(base));
