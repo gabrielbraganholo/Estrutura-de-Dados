@@ -7,9 +7,7 @@ public class Main {
 
         Grafo grafo = Utilidade.extrairArestas(base);
 
-        if (grafo != null) {
-            System.out.println("--------------------Grafo--------------------");
-            grafo.mostrarGrafo();
-        }
+        System.out.println("--------------------Grafo--------------------");
+        grafo.mostrarGrafo();
     }
 }
