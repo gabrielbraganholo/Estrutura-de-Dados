@@ -24,18 +24,18 @@ public class Main {
             TreeSet<Figura> desejadasOutro = Utilidades.popularArvore(DESEJADAS_OUTRO);
 
             System.out.println("""
-        ╔══════════════════════════════════════════════════╗
-        ║              ÁLBUM DE FIGURINHAS                 ║
-        ╠══════════════════════════════════════════════════╣
-        ║ 1 - Cadastrar figurinhas repetidas pessoais      ║
-        ║ 2 - Listar figurinhas repetidas pessoais         ║
-        ║ 3 - Cadastrar figurinhas desejadas pessoais      ║
-        ║ 4 - Listar figurinhas desejadas pessoais         ║
-        ║ 5 - Carregar repetidas de outro colecionador     ║
-        ║ 6 - Carregar desejadas de outro colecionador     ║
-        ║ 7 - Sair                                         ║
-        ╚══════════════════════════════════════════════════╝
-        """);
+            ╔══════════════════════════════════════════════════╗
+            ║              ÁLBUM DE FIGURINHAS                 ║
+            ╠══════════════════════════════════════════════════╣
+            ║ 1 - Cadastrar figurinhas repetidas pessoais      ║
+            ║ 2 - Listar figurinhas repetidas pessoais         ║
+            ║ 3 - Cadastrar figurinhas desejadas pessoais      ║
+            ║ 4 - Listar figurinhas desejadas pessoais         ║
+            ║ 5 - Carregar repetidas de outro colecionador     ║
+            ║ 6 - Carregar desejadas de outro colecionador     ║
+            ║ 7 - Sair                                         ║
+            ╚══════════════════════════════════════════════════╝
+            """);
 
             do {
 
