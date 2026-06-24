@@ -2,10 +2,10 @@ package trabalho_03;
 
 import java.util.TreeSet;
 
-public class Figura {
+public class Figura implements Comparable<Figura> {
 
     private String nomeSelecao;
-    private String nomeFigura;
+    private int numeroFigura;
     private String descricao;
     private int quantidade;
     private boolean rara;
@@ -18,12 +18,12 @@ public class Figura {
         this.nomeSelecao = nomeSelecao;
     }
 
-    public String getNomeFigura() {
-        return nomeFigura;
+    public int getNumeroFigura() {
+        return numeroFigura;
     }
 
-    public void setNomeFigura(String nomeFigura) {
-        this.nomeFigura = nomeFigura;
+    public void setNumeroFigura(int numeroFigura) {
+        this.numeroFigura = numeroFigura;
     }
 
     public String getDescricao() {
@@ -50,12 +50,34 @@ public class Figura {
         this.rara = rara;
     }
 
-    public Figura (String nomeSelecao, String nomeFigura, String descricao, int quantidade, boolean rara) {
+    public Figura (String nomeSelecao, int numeroFigura, String descricao, int quantidade, boolean rara) {
         this.nomeSelecao = nomeSelecao;
-        this.nomeFigura = nomeFigura;
+        this.numeroFigura = numeroFigura;
         this.descricao = descricao;
         this.quantidade = quantidade;
         this.rara = rara;
     }
 
+    @Override
+    public int compareTo(Figura outra) {
+
+        int resultado = this.nomeSelecao.compareTo(outra.nomeSelecao);
+
+        if (resultado != 0) {
+            return resultado;
+        }
+
+        return Integer.compare(this.numeroFigura, outra.numeroFigura);
+    }
+
+    @Override
+    public String toString() {
+        return "Figura{" +
+                "nomeSelecao='" + nomeSelecao + '\'' +
+                ", numeroFigura=" + numeroFigura +
+                ", descricao='" + descricao + '\'' +
+                ", quantidade=" + quantidade +
+                ", rara=" + rara +
+                '}';
+    }
 }
